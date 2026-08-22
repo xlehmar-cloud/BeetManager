@@ -13,8 +13,10 @@ export default function Beete() {
   const [editingBed, setEditingBed] = useState(null); // null=zu (kein Formular), 'new', oder Bed-Objekt
   const [pendingDelete, setPendingDelete] = useState(null);
 
+  // loading steuert nur den Ladetext beim allerersten Laden (s. u.); reload()
+  // läuft auch nach jedem Anlegen/Bearbeiten/Löschen eines Beets erneut und
+  // soll die Liste dabei nicht kurz durch den Ladetext ersetzen (Flackern).
   function reload() {
-    setLoading(true);
     api
       .listBeds()
       .then(({ beds }) => setBeds(beds))
@@ -22,7 +24,11 @@ export default function Beete() {
       .finally(() => setLoading(false));
   }
 
-  useEffect(reload, []);
+  useEffect(() => {
+    setLoading(true);
+    reload();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   async function handleCreate(data) {
     await api.createBed(data);

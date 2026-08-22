@@ -10,13 +10,17 @@ export function PlantCatalogProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // reload() selbst setzt loading nie auf true — nur der Login-Wechsel unten
+  // tut das. reload() wird auch nach jedem Anlegen/Bearbeiten/Löschen einer
+  // Pflanze in PlantManager erneut aufgerufen; würde das jedes Mal `loading`
+  // kurz auf true setzen, würden sowohl PlantManagers Liste als auch (über
+  // catalogLoading) der komplette BedPlanner kurz durch einen Ladetext ersetzt
+  // (Flackern bei jedem Klick).
   const reload = useCallback(() => {
     if (!user) {
       setPlants([]);
-      setLoading(false);
       return Promise.resolve();
     }
-    setLoading(true);
     return api
       .listPlants()
       .then(({ plants }) => setPlants(plants))
@@ -24,9 +28,10 @@ export function PlantCatalogProvider({ children }) {
       .finally(() => setLoading(false));
   }, [user]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    setLoading(true);
     reload();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const plantsById = useMemo(() => Object.fromEntries(plants.map((p) => [p.id, p])), [plants]);

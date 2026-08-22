@@ -38,8 +38,12 @@ export default function BedPlanner() {
   const [confirmDeleteAll, setConfirmDeleteAll] = useState(false);
   const [deletingAll, setDeletingAll] = useState(false);
 
+  // reload() läuft nach jeder Platzierung/Verschiebung/Löschung — bei bewaffnet
+  // bleibender Pflanze (mehrere Platzierungen hintereinander) also sehr oft.
+  // Der volle "Lade Beet…"-Ladebildschirm (s. u.) darf deshalb NUR beim allerersten
+  // Laden erscheinen, nicht bei jedem Hintergrund-Reload — sonst würde die ganze
+  // Seite bei jedem Klick kurz durch den Ladetext ersetzt ("flackern").
   function reload() {
-    setLoading(true);
     Promise.all([api.getBed(bedId), api.listPlantings(bedId)])
       .then(([bedRes, plantingsRes]) => {
         setBed(bedRes.bed);
@@ -49,7 +53,18 @@ export default function BedPlanner() {
       .finally(() => setLoading(false));
   }
 
-  useEffect(reload, [bedId]);
+  // Der volle "Lade Beet…"-Ladebildschirm (s. u.) erscheint bewusst NUR beim
+  // erstmaligen Öffnen eines Beets (bedId ändert sich), gesteuert allein hier —
+  // reload() selbst setzt loading nie auf true. reload() läuft sonst nach jeder
+  // Platzierung/Verschiebung/Löschung, bei bewaffnet bleibender Pflanze (mehrere
+  // Platzierungen hintereinander) also sehr oft; würde reload() dabei jedes Mal
+  // den Ladebildschirm zeigen, würde die ganze Seite bei jedem Klick kurz durch
+  // den Ladetext ersetzt ("flackern").
+  useEffect(() => {
+    setLoading(true);
+    reload();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bedId]);
 
   const selectedPlanting = plantings.find((p) => p.id === selectedPlantingId) || null;
 
