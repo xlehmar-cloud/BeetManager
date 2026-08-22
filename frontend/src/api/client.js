@@ -47,6 +47,9 @@ export const api = {
   me: () => request('/me'),
 
   listPlants: () => request('/plants'),
+  createPlant: (data) => request('/plants', { method: 'POST', body: data }),
+  updatePlant: (id, data) => request(`/plants/${id}`, { method: 'PUT', body: data }),
+  deletePlant: (id) => request(`/plants/${id}`, { method: 'DELETE' }),
 
   listBeds: () => request('/beds'),
   createBed: (data) => request('/beds', { method: 'POST', body: data }),

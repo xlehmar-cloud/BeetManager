@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { db } from '../db.js';
+import { db, ensureUserPlantsSeeded } from '../db.js';
 
 const router = Router();
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
@@ -33,6 +33,10 @@ router.post('/register', async (req, res) => {
   const result = db
     .prepare('INSERT INTO users (email, password_hash) VALUES (?, ?)')
     .run(email, passwordHash);
+
+  // Startkatalog als editierbare Kopie in den eigenen Pflanzenkatalog des
+  // neuen Nutzers übernehmen (s. plantSeed.js).
+  ensureUserPlantsSeeded(result.lastInsertRowid);
 
   const token = signToken(result.lastInsertRowid);
   res.status(201).json({ token, user: { id: result.lastInsertRowid, email } });

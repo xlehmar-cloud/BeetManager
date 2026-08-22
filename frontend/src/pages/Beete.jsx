@@ -48,6 +48,7 @@ export default function Beete() {
         <h1>🌱 Beet-Manager</h1>
         <nav className="top-nav">
           <Link to="/kalender">Kalenderübersicht</Link>
+          <Link to="/pflanzen">Mein Pflanzenkatalog</Link>
           <div className="user-bar">
             <span>{user?.email}</span>
             <button onClick={logout}>Abmelden</button>

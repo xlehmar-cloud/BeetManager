@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { db } from '../db.js';
 import { authenticate } from '../middleware/auth.js';
 import { getOwnedBed } from './beds.js';
-import { plantsById } from '../plantCatalog.js';
+import { getPlantsForUser } from '../userPlants.js';
 import { computeOccupancy } from 'shared/src/timing.js';
 import { checkPlacement, isCenterWithinBed } from 'shared/src/spacing.js';
 
@@ -22,14 +22,15 @@ function loadBedOr404(req, res) {
 }
 
 /**
- * Validiert eine Pflanzung gegen Katalog, Methode, Monat/Jahr, Rand-Regel (nur
- * der Mittelpunkt muss im Beet liegen, der Radius darf überstehen) und harte
- * Abstandsprüfung zu anderen Pflanzungen (nur bei method !== 'historisch'). Bei
- * PUT wird die eigene Pflanzung (excludePlantingId) von der Abstandsprüfung
- * ausgenommen.
+ * Validiert eine Pflanzung gegen den (benutzerabhängigen!) Katalog, Methode,
+ * Monat/Jahr, Rand-Regel (nur der Mittelpunkt muss im Beet liegen, der Radius
+ * darf überstehen) und harte Abstandsprüfung zu anderen Pflanzungen (nur bei
+ * method !== 'historisch'). Bei PUT wird die eigene Pflanzung
+ * (excludePlantingId) von der Abstandsprüfung ausgenommen.
  */
-function validatePlantingInput(bed, body, { excludePlantingId } = {}) {
+function validatePlantingInput(userId, bed, body, { excludePlantingId } = {}) {
   const { plant_id, method, year, month, x_cm, y_cm } = body || {};
+  const plantsById = Object.fromEntries(getPlantsForUser(userId).map((p) => [p.id, p]));
   const plant = plantsById[plant_id];
   if (!plant) return { status: 400, error: 'Unbekannte Pflanze.' };
 
@@ -117,7 +118,7 @@ router.post('/', (req, res) => {
   const bed = loadBedOr404(req, res);
   if (!bed) return;
 
-  const validation = validatePlantingInput(bed, req.body);
+  const validation = validatePlantingInput(req.user.id, bed, req.body);
   if (validation.error) {
     return res
       .status(validation.status)
@@ -161,7 +162,7 @@ router.put('/:plantingId', (req, res) => {
     .get(req.params.plantingId, bed.id);
   if (!existing) return res.status(404).json({ error: 'Pflanzung nicht gefunden.' });
 
-  const validation = validatePlantingInput(bed, req.body, { excludePlantingId: existing.id });
+  const validation = validatePlantingInput(req.user.id, bed, req.body, { excludePlantingId: existing.id });
   if (validation.error) {
     return res
       .status(validation.status)

@@ -1,6 +1,6 @@
 # Beet-Manager
 
-Beet-Manager – eine Web-App zur interaktiven Planung von Hochbeeten. Läuft im
+Beet-Manager – eine Web-App zur interaktiven Planung von Gemüsebeeten. Läuft im
 Browser, kann perspektivisch auch als Smartphone-App angeboten werden. Man legt
 eigene Beete an und plant darin, was wann gepflanzt wird: mit Mindestabstand-
 Prüfung, Mischkultur- und Fruchtfolge-Hinweisen sowie einer Kalendervorschau
@@ -71,6 +71,9 @@ cd shared && npm test
   Position nachtragen.
 - **Kalender:** Aussaat → (bei Saatgut: wochengenaue Keimung) → Erntefenster → Beet
   wieder frei, pro Beet und beetübergreifend unter „Kalenderübersicht“.
+- **Eigener Pflanzenkatalog:** startet als editierbare Kopie unserer recherchierten
+  Pflanzendaten, unter „Mein Pflanzenkatalog“ lässt sich jeder Eintrag bearbeiten und
+  eigenes Saatgut/eigene Setzlinge hinzufügen (inkl. eigener guter/schlechter Nachbarn).
 
 ## Projektstruktur
 
@@ -82,16 +85,18 @@ BeetManager/
 ├── backend/                Node/Express-API
 │   ├── src/
 │   │   ├── server.js        Einstiegspunkt, Middleware, Routen
-│   │   ├── db.js            SQLite-Verbindung + Schema (users, beds, plantings)
-│   │   ├── plantCatalog.js  Lädt/validiert data/plants.json beim Start
+│   │   ├── db.js            SQLite-Verbindung + Schema + Migration
+│   │   ├── plantCatalog.js  Lädt/validiert data/plants.json beim Start (Startkatalog)
+│   │   ├── plantSeed.js     Kopiert den Startkatalog in den Katalog eines Nutzers
+│   │   ├── userPlants.js    CRUD + Validierung für den nutzereigenen Pflanzenkatalog
 │   │   ├── data/
-│   │   │   ├── plants.json         Pflanzenkatalog (von Hand editierbar)
-│   │   │   └── PLANTS_SCHEMA.md    Schema-Doku für plants.json
+│   │   │   ├── plants.json         Startkatalog (nur Vorlage für neue Nutzer)
+│   │   │   └── PLANTS_SCHEMA.md    Schema-Doku
 │   │   ├── middleware/
 │   │   │   └── auth.js      JWT-Prüfung (req.user)
 │   │   └── routes/
 │   │       ├── auth.js      /api/auth/register, /api/auth/login
-│   │       ├── plants.js    /api/plants
+│   │       ├── plants.js    /api/plants (nutzereigener Katalog, CRUD)
 │   │       ├── beds.js      /api/beds (CRUD)
 │   │       └── plantings.js /api/beds/:id/plantings (verschachtelt)
 │   └── data/                 SQLite-Datei (nicht in Git)
@@ -99,10 +104,10 @@ BeetManager/
     └── src/
         ├── api/client.js     Fetch-Wrapper zur Backend-API
         ├── context/          AuthContext, PlantCatalogContext
-        ├── components/       BedCanvas, PlantPicker, CalendarView, GuidanceBanner, …
+        ├── components/       BedCanvas, PlantPicker, PlantForm, CalendarView, …
         ├── icons/             PlantIcons.jsx (kategorienbasiertes SVG-Set)
         ├── styles/planner.css
-        └── pages/             Beete, BedPlanner, Overview, Login, Register
+        └── pages/             Beete, BedPlanner, Overview, PlantManager, Login, Register
 ```
 
 Details zu Architektur und Konventionen: siehe `CLAUDE.md`. Der ursprüngliche

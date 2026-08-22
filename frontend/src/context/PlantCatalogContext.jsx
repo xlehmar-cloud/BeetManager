@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { api } from '../api/client.js';
 import { useAuth } from './AuthContext.jsx';
 
@@ -10,24 +10,29 @@ export function PlantCatalogProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  const reload = useCallback(() => {
     if (!user) {
       setPlants([]);
       setLoading(false);
-      return;
+      return Promise.resolve();
     }
     setLoading(true);
-    api
+    return api
       .listPlants()
       .then(({ plants }) => setPlants(plants))
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
   }, [user]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    reload();
+  }, [user]);
+
   const plantsById = useMemo(() => Object.fromEntries(plants.map((p) => [p.id, p])), [plants]);
 
   return (
-    <PlantCatalogContext.Provider value={{ plants, plantsById, loading, error }}>
+    <PlantCatalogContext.Provider value={{ plants, plantsById, loading, error, reload }}>
       {children}
     </PlantCatalogContext.Provider>
   );

@@ -3,6 +3,7 @@ import { useAuth } from './context/AuthContext.jsx';
 import Beete from './pages/Beete.jsx';
 import BedPlanner from './pages/BedPlanner.jsx';
 import Overview from './pages/Overview.jsx';
+import PlantManager from './pages/PlantManager.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 
@@ -44,6 +45,14 @@ export default function App() {
         element={
           <ProtectedRoute>
             <Overview />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/pflanzen"
+        element={
+          <ProtectedRoute>
+            <PlantManager />
           </ProtectedRoute>
         }
       />
