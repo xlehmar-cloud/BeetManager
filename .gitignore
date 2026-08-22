@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+
+# Umgebungsvariablen
+.env
+.env.local
+
+# SQLite-Datenbank (lokale Nutzdaten, gehört nicht ins Repo)
+backend/data/
+
+# Editor/OS
+.DS_Store
+*.log

@@ -1,0 +1,10 @@
+{
+  "name": "shared",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Reine Regel-Engine (Zeit-/Abstands-/Mischkultur-/Fruchtfolge-Berechnung), identisch von Backend und Frontend genutzt.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

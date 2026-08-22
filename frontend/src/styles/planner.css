@@ -1,0 +1,683 @@
+:root {
+  --color-soil: #a97c50;
+  --color-soil-dark: #8a6239;
+  --color-radius-ring: #3a7d44;
+  --color-radius-ring-conflict: #b3261e;
+  --color-warning: #b8860b;
+  --color-warning-bg: #fff6e0;
+  --radius-organic: 16px;
+}
+
+/* ---------- Layout / Nav ---------- */
+
+.beete-page,
+.bed-planner-page,
+.overview-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.beete-page header,
+.bed-planner-page header,
+.overview-page header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.top-nav a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.beete-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-organic);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.empty-hint {
+  color: #6b7566;
+  font-style: italic;
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #6b7566;
+  margin: -0.5rem 0 0.5rem;
+}
+
+/* ---------- Beete-Liste ---------- */
+
+.bed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.bed-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-organic);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bed-card h3 {
+  margin: 0;
+}
+
+.bed-card-meta {
+  color: #6b7566;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.bed-card-open {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bed-card-open:hover {
+  text-decoration: underline;
+}
+
+.bed-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bed-form,
+.history-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 420px;
+}
+
+.bed-form label,
+.history-form label,
+.plant-tooltip dt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.bed-form input,
+.bed-form select,
+.history-form input,
+.history-form select {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.bed-form-dims {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.bed-form-dims label {
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+button.secondary {
+  background: var(--color-surface);
+  color: var(--color-primary-dark);
+  border: 1px solid var(--color-primary-dark);
+}
+
+button.secondary:hover {
+  background: var(--color-bg);
+}
+
+button.danger {
+  background: var(--color-error);
+}
+
+button.danger:hover {
+  background: #8f1f19;
+}
+
+button.small {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+button.link-button {
+  background: none;
+  color: var(--color-primary-dark);
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modal {
+  background: var(--color-surface);
+  border-radius: var(--radius-organic);
+  padding: 1.5rem;
+  max-width: 380px;
+}
+
+/* ---------- Tabs ---------- */
+
+.tab-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tab-bar button {
+  background: none;
+  color: var(--color-text);
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  padding: 0.6rem 0.9rem;
+}
+
+.tab-bar button.active {
+  border-bottom-color: var(--color-primary);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.bed-meta {
+  color: #6b7566;
+  margin: 0;
+}
+
+/* ---------- Planer-Layout ---------- */
+
+.planner-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .planner-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.planner-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.planner-canvas-area {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-organic);
+  padding: 1rem;
+}
+
+.month-selector {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.month-selector label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  flex: 1;
+}
+
+.month-selector select {
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.year-select {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- PlantPicker ---------- */
+
+.plant-picker {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-organic);
+  padding: 0.85rem;
+}
+
+.plant-picker input[type='search'] {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.plant-picker-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.plant-picker-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.plant-picker-item:hover {
+  border-color: var(--color-primary);
+  /* Höhere Spezifität als die globale `button:hover`-Regel (index.css) nötig,
+     sonst gewinnt deren dunkelgrüner Hintergrund und überdeckt das Kennzeichen. */
+  background: var(--color-bg);
+}
+
+.plant-picker-item.armed {
+  border-color: var(--color-primary);
+  background: #e6f0e3;
+}
+
+.plant-picker-item-multi {
+  justify-content: space-between;
+  cursor: default;
+}
+
+.method-buttons {
+  display: flex;
+  gap: 0.3rem;
+  margin-left: auto;
+}
+
+.method-buttons button {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.method-badge {
+  margin-left: auto;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.method-badge-saatgut {
+  background: #e6f0e3;
+  color: var(--color-primary-dark);
+}
+
+.method-badge-setzling {
+  background: #f0e6d2;
+  color: #7a5a1e;
+}
+
+.plant-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary-dark);
+  flex-shrink: 0;
+}
+
+.armed-hint {
+  background: #e6f0e3;
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- BedCanvas ---------- */
+
+.bed-canvas {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bed-soil {
+  fill: var(--color-soil);
+  stroke: var(--color-soil-dark);
+  stroke-width: 0.5;
+}
+
+.plant-marker-ring {
+  fill: rgba(58, 125, 68, 0.15);
+  stroke: var(--color-radius-ring);
+  stroke-width: 0.6;
+  stroke-dasharray: 2 1.5;
+}
+
+.plant-marker.selected .plant-marker-ring {
+  stroke-width: 1.1;
+}
+
+.plant-marker.faded {
+  opacity: 0.35;
+}
+
+.plant-marker-icon {
+  color: var(--color-primary-dark);
+}
+
+.ghost-marker {
+  /* Rein visuelle Vorschau — darf Klicks nie abfangen, sonst blockiert sie den
+     Klick auf einen darunterliegenden bestehenden Marker (Auswählen/Löschen/
+     Verschieben wäre sonst unmöglich, solange eine Pflanze bewaffnet ist). Die
+     eigentliche Platzierung wird ohnehin unabhängig vom Ghost-DOM direkt aus der
+     Klick-Position berechnet (s. BedCanvas#evaluateCandidate). */
+  pointer-events: none;
+}
+
+.ghost-marker circle:first-child {
+  fill: rgba(58, 125, 68, 0.12);
+  stroke: var(--color-radius-ring);
+  stroke-width: 0.8;
+  stroke-dasharray: 2 1.5;
+}
+
+.ghost-marker.conflict circle:first-child {
+  fill: rgba(179, 38, 30, 0.12);
+  stroke: var(--color-radius-ring-conflict);
+}
+
+.ghost-center {
+  fill: var(--color-radius-ring);
+}
+
+.ghost-marker.conflict .ghost-center {
+  fill: var(--color-radius-ring-conflict);
+}
+
+/* ---------- PlantTooltip ---------- */
+
+.plant-tooltip {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-organic);
+  padding: 0.9rem 1rem;
+}
+
+.plant-tooltip header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plant-tooltip header h3 {
+  margin: 0;
+  flex: 1;
+}
+
+.tooltip-close {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.plant-tooltip dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.75rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+}
+
+.plant-tooltip dt {
+  color: #6b7566;
+}
+
+.zehrertyp-stark {
+  color: #b3261e;
+}
+
+.zehrertyp-mittel {
+  color: var(--color-warning);
+}
+
+.zehrertyp-schwach {
+  color: var(--color-primary-dark);
+}
+
+.plant-tooltip-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* ---------- GuidanceBanner ---------- */
+
+.guidance-banner {
+  background: var(--color-warning-bg);
+  border: 1px solid var(--color-warning);
+  border-radius: var(--radius-organic);
+  padding: 0.85rem 1rem;
+}
+
+.guidance-title {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+
+.guidance-banner ul {
+  margin: 0 0 0.7rem;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.guidance-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* ---------- BedInfoPanel ---------- */
+
+.bed-info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.bed-info-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.bed-info-panel {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.bed-info-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.85rem;
+}
+
+.bed-info-detail {
+  color: #6b7566;
+}
+
+.bed-info-germination {
+  color: var(--color-warning);
+}
+
+/* ---------- CalendarView ---------- */
+
+.calendar-view {
+  overflow-x: auto;
+}
+
+.calendar-header,
+.calendar-row {
+  display: grid;
+  grid-template-columns: 140px repeat(12, minmax(36px, 1fr));
+  align-items: center;
+}
+
+.calendar-label-col {
+  font-size: 0.85rem;
+  padding-right: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendar-month-label {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #6b7566;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.calendar-group-title {
+  margin: 1rem 0 0.4rem;
+}
+
+.calendar-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(36px, 1fr));
+  grid-column: span 12;
+  height: 22px;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent calc(100% / 12 - 1px),
+    var(--color-border) calc(100% / 12)
+  );
+}
+
+.calendar-bar {
+  grid-row: 1;
+  height: 14px;
+  align-self: center;
+  border-radius: 6px;
+}
+
+.calendar-bar-growth {
+  background: #9fcf9a;
+}
+
+.calendar-bar-harvest {
+  background: var(--color-primary);
+}
+
+.calendar-bar-germination {
+  position: absolute;
+  top: 2px;
+  height: 6px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-warning),
+    var(--color-warning) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  border-radius: 3px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 600px) {
+  .calendar-header,
+  .calendar-row {
+    grid-template-columns: 100px repeat(12, minmax(28px, 1fr));
+  }
+}
