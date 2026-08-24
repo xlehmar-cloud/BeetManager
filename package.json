@@ -2,7 +2,7 @@
   "name": "beet-manager",
   "private": true,
   "version": "0.1.0",
-  "description": "Beet-Manager – Web-App zur Verwaltung von Beeten",
+  "description": "Beet-Planer – Web-App zur Verwaltung von Beeten",
   "workspaces": [
     "shared",
     "backend",

@@ -26,7 +26,7 @@ export default function Register() {
 
   return (
     <main className="auth-page">
-      <h1>🌱 Beet-Manager</h1>
+      <h1>🌱 Beet-Planer</h1>
       <h2>Konto erstellen</h2>
       <form onSubmit={handleSubmit}>
         <label>

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Beet-Manager — a web app (browser-based, possible future mobile client) for managing user-specific
+Beet-Planer — a web app (browser-based, possible future mobile client) for managing user-specific
 "Beete" (garden beds). Auth (register/login) plus the full v1 planting planner are implemented: users
 create beds, place plants on a to-scale bed canvas with hard spacing enforcement, get soft
 companion-planting/crop-rotation guidance, and see a per-bed and cross-bed calendar. See

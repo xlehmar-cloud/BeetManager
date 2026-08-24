@@ -589,6 +589,13 @@ button.link-button {
   font-size: 0.85rem;
 }
 
+.bed-info-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
 .bed-info-detail {
   color: #6b7566;
 }
@@ -878,4 +885,104 @@ button.link-button {
   .calendar-row {
     grid-template-columns: 100px repeat(12, minmax(28px, 1fr));
   }
+}
+
+/* ---------- Druckansicht (BedPrintSheet) ----------
+   Auf dem Bildschirm unsichtbar (display:none); erscheint nur bei
+   window.print()/Strg+P — der Browser-Druckdialog bietet dort ohnehin "Als
+   PDF speichern" als Ziel an, eine eigene PDF-Erzeugung ist dafür nicht
+   nötig. .no-print (der komplette Bildschirm-Inhalt der Beet-Seite, s.
+   BedPlanner.jsx) wird beim Drucken per display:none entfernt — nicht nur
+   visuell versteckt (visibility:hidden würde seinen Platz im Layout
+   behalten und vor/nach dem eigentlichen Inhalt leere Seiten erzeugen). */
+.print-only {
+  display: none;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+}
+
+.bed-print-sheet h1 {
+  margin: 0 0 0.2rem;
+  font-size: 1.4rem;
+}
+
+.bed-print-meta {
+  color: #555;
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.bed-print-diagram {
+  display: block;
+  width: 100%;
+  max-width: 16cm;
+  height: auto;
+  margin: 0 0 1rem;
+  border: 1px solid #999;
+}
+
+/* Reine Schwarz-Weiß-Linienzeichnung fürs Drucken — kein gefüllter Boden,
+   keine gefüllten Abstandsringe, spart Toner. Nur für den Druck-Lageplan
+   überschrieben, der Planer-Canvas am Bildschirm bleibt farbig. */
+.bed-print-diagram .bed-soil {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.5;
+}
+
+.bed-print-diagram .plant-marker-ring {
+  fill: none;
+  stroke: #000;
+}
+
+.bed-print-diagram .plant-marker-icon {
+  color: #000;
+}
+
+.bed-print-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.bed-print-table th,
+.bed-print-table td {
+  border: 1px solid #999;
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+}
+
+.bed-print-check-col {
+  width: 1.5rem;
+  text-align: center;
+}
+
+.bed-print-icon-col {
+  width: 1.6rem;
+  text-align: center;
+}
+
+.bed-print-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  color: #333;
+  vertical-align: middle;
+}
+
+.bed-print-footer {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #777;
 }

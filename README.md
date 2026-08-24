@@ -1,6 +1,6 @@
-# Beet-Manager
+# Beet-Planer
 
-Beet-Manager – eine Web-App zur interaktiven Planung von Gemüsebeeten. Läuft im
+Beet-Planer – eine Web-App zur interaktiven Planung von Gemüsebeeten. Läuft im
 Browser, kann perspektivisch auch als Smartphone-App angeboten werden. Man legt
 eigene Beete an und plant darin, was wann gepflanzt wird: mit Mindestabstand-
 Prüfung, Mischkultur- und Fruchtfolge-Hinweisen sowie einer Kalendervorschau

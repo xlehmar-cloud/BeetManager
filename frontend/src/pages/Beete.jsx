@@ -51,7 +51,7 @@ export default function Beete() {
   return (
     <main className="beete-page">
       <header>
-        <h1>🌱 Beet-Manager</h1>
+        <h1>🌱 Beet-Planer</h1>
         <nav className="top-nav">
           <Link to="/kalender">Kalenderübersicht</Link>
           <Link to="/pflanzen">Mein Pflanzenkatalog</Link>

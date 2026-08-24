@@ -200,7 +200,13 @@ export function validatePlantInput(userId, body, { excludePlantId } = {}) {
   const badEntries = Array.isArray(companionsBad) ? companionsBad : [];
   const badIds = badEntries.map((b) => b.id);
 
-  if (goodIds.includes(excludePlantId) || badIds.includes(excludePlantId)) {
+  // Nur "gute" Selbst-Nachbarschaft ist unsinnig und wird blockiert. Eine
+  // Selbst-Unverträglichkeit ("bad", z.B. Radieschen neben Radieschen) ist
+  // dagegen ein gültiger, im Startkatalog auch tatsächlich genutzter Fall
+  // (s. shared/companions.js#getCompanionWarnings) und darf hier nicht
+  // pauschal verhindert werden, sonst lässt sich so eine Pflanze nie wieder
+  // speichern/bearbeiten.
+  if (goodIds.includes(excludePlantId)) {
     return { error: 'Eine Pflanze kann nicht ihre eigene Nachbarin sein.' };
   }
   if (!allOwnedByUser(userId, [...goodIds, ...badIds])) {

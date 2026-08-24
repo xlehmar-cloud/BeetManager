@@ -52,5 +52,5 @@ app.get('/api/plantings', authenticate, (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Beet-Manager Backend läuft auf http://localhost:${PORT}`);
+  console.log(`Beet-Planer Backend läuft auf http://localhost:${PORT}`);
 });

@@ -13,6 +13,7 @@ import GuidanceBanner from '../components/GuidanceBanner.jsx';
 import BedInfoPanel from '../components/BedInfoPanel.jsx';
 import CalendarView from '../components/CalendarView.jsx';
 import HistoryForm from '../components/HistoryForm.jsx';
+import BedPrintSheet from '../components/BedPrintSheet.jsx';
 
 const TABS = { PLANNER: 'planner', CALENDAR: 'kalender', HISTORY: 'historie' };
 
@@ -88,8 +89,8 @@ export default function BedPlanner() {
     setArmed({ plant, method: planting.method });
   }
 
-  async function handleRemove(planting) {
-    await api.deletePlanting(bedId, planting.id);
+  async function handleRemove(plantingId) {
+    await api.deletePlanting(bedId, plantingId);
     setSelectedPlantingId(null);
     reload();
   }
@@ -192,6 +193,7 @@ export default function BedPlanner() {
 
   return (
     <main className="bed-planner-page">
+      <div className="no-print">
       <header>
         <Link to="/" className="back-link">
           ← Meine Beete
@@ -200,6 +202,9 @@ export default function BedPlanner() {
         <p className="bed-meta">
           {bed.width_cm} × {bed.length_cm} cm
         </p>
+        <button type="button" className="secondary" onClick={() => window.print()}>
+          🖨️ Drucken / als PDF speichern
+        </button>
       </header>
 
       <nav className="tab-bar">
@@ -243,7 +248,7 @@ export default function BedPlanner() {
                 plant={plantsById[selectedPlanting.plant_id]}
                 onClose={() => setSelectedPlantingId(null)}
                 onMove={selectedPlanting.method !== 'historisch' ? () => startMove(selectedPlanting) : null}
-                onRemove={() => handleRemove(selectedPlanting)}
+                onRemove={() => handleRemove(selectedPlanting.id)}
               />
             )}
 
@@ -255,7 +260,7 @@ export default function BedPlanner() {
                 </button>
               )}
             </div>
-            <BedInfoPanel plantings={bedHistoryForInfo} plantsById={plantsById} />
+            <BedInfoPanel plantings={bedHistoryForInfo} plantsById={plantsById} onRemove={handleRemove} />
           </div>
 
           <div className="planner-canvas-area">
@@ -310,6 +315,9 @@ export default function BedPlanner() {
           </div>
         </div>
       )}
+      </div>
+
+      <BedPrintSheet bed={bed} plantings={bedHistoryForInfo} plantsById={plantsById} />
     </main>
   );
 }
