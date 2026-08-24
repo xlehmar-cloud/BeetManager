@@ -1,0 +1,2990 @@
+{
+  "plants": [
+    {
+      "id": "tomate",
+      "name": "Tomate",
+      "family": "nachtschattengewaechse",
+      "familyLabel": "Nachtschattengewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          5
+        ],
+        "note": "Mitte Mai (nach den Eisheiligen), als Setzling"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 7,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Mitte Juli bis Oktober"
+      },
+      "spacingMinCm": 50,
+      "spacingMaxCm": 80,
+      "companions": {
+        "good": [
+          "basilikum",
+          "petersilie",
+          "knoblauch",
+          "zwiebel",
+          "buschbohne",
+          "sellerie"
+        ],
+        "bad": [
+          {
+            "id": "kartoffel",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "paprika",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "aubergine",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "gurke",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "kohlrabi",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "fenchel",
+            "reason": "Fenchel hemmt über Wurzelausscheidungen das Wachstum vieler Nachbarn."
+          },
+          {
+            "id": "erbse",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rote_bete",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "fruit"
+    },
+    {
+      "id": "gurke",
+      "name": "Gurke",
+      "family": "kuerbisgewaechse",
+      "familyLabel": "Kürbisgewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          5
+        ],
+        "transplant": [
+          5
+        ],
+        "note": "Ab Mitte Mai, Direktsaat oder Setzling"
+      },
+      "germination": {
+        "daysMin": 6,
+        "daysMax": 10,
+        "note": "Keimdauer ca. 6–10 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis Oktober"
+      },
+      "spacingMinCm": 40,
+      "spacingMaxCm": 100,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "erbse",
+          "dill",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "kopfsalat",
+          "lauch",
+          "rote_bete",
+          "zwiebel",
+          "basilikum"
+        ],
+        "bad": [
+          {
+            "id": "tomate",
+            "reason": "Unterschiedlicher Wasserbedarf; Gurke begünstigt bei Tomate den Braunfäule-Befall."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "radieschen",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "fruit"
+    },
+    {
+      "id": "zucchini",
+      "name": "Zucchini",
+      "family": "kuerbisgewaechse",
+      "familyLabel": "Kürbisgewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          5
+        ],
+        "transplant": [
+          4,
+          5
+        ],
+        "note": "Ab Mitte Mai, Direktsaat oder Vorkultur"
+      },
+      "germination": {
+        "daysMin": 6,
+        "daysMax": 10,
+        "note": "Keimdauer ca. 6–10 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis Oktober"
+      },
+      "spacingMinCm": 90,
+      "spacingMaxCm": 100,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "stangenbohne",
+          "erbse",
+          "zwiebel",
+          "knoblauch",
+          "kopfsalat",
+          "lauch",
+          "karotte",
+          "petersilie",
+          "rettich",
+          "rote_bete",
+          "sellerie",
+          "spinat",
+          "basilikum"
+        ],
+        "bad": [
+          {
+            "id": "gurke",
+            "reason": "Beide Kürbisgewächse – ähnlicher Krankheitsdruck (v.a. Mehltau) und hoher Platz-/Nährstoffbedarf."
+          },
+          {
+            "id": "kuerbis",
+            "reason": "Beide Kürbisgewächse – ähnlicher Krankheitsdruck (v.a. Mehltau) und hoher Platz-/Nährstoffbedarf."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "tomate",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "fruit"
+    },
+    {
+      "id": "kuerbis",
+      "name": "Kürbis",
+      "family": "kuerbisgewaechse",
+      "familyLabel": "Kürbisgewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          5
+        ],
+        "transplant": [
+          5
+        ],
+        "note": "Ab Mitte Mai (nach den Eisheiligen) direkt aussäen oder als Setzling pflanzen"
+      },
+      "germination": {
+        "daysMin": 6,
+        "daysMax": 10,
+        "note": "Keimdauer ca. 6–10 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 9,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "September bis Oktober"
+      },
+      "spacingMinCm": 100,
+      "spacingMaxCm": 150,
+      "companions": {
+        "good": [
+          "stangenbohne",
+          "erbse",
+          "knoblauch",
+          "zwiebel"
+        ],
+        "bad": [
+          {
+            "id": "gurke",
+            "reason": "Beide Kürbisgewächse – ähnlicher Krankheitsdruck (v.a. Mehltau) und hoher Platz-/Nährstoffbedarf."
+          },
+          {
+            "id": "zucchini",
+            "reason": "Beide Kürbisgewächse – ähnlicher Krankheitsdruck (v.a. Mehltau) und hoher Platz-/Nährstoffbedarf."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 5,
+      "icon": "fruit"
+    },
+    {
+      "id": "paprika",
+      "name": "Paprika",
+      "family": "nachtschattengewaechse",
+      "familyLabel": "Nachtschattengewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          5
+        ],
+        "note": "Als Setzling ab Mitte Mai (nach den Eisheiligen)"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 7,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juli bis Oktober"
+      },
+      "spacingMinCm": 45,
+      "spacingMaxCm": 50,
+      "companions": {
+        "good": [
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "tomate",
+          "basilikum"
+        ],
+        "bad": [
+          {
+            "id": "kartoffel",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "aubergine",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "chili",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "erbse",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "fenchel",
+            "reason": "Fenchel hemmt über Wurzelausscheidungen das Wachstum vieler Nachbarn."
+          },
+          {
+            "id": "rote_bete",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "fruit"
+    },
+    {
+      "id": "chili",
+      "name": "Chili",
+      "family": "nachtschattengewaechse",
+      "familyLabel": "Nachtschattengewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          5
+        ],
+        "note": "Als Setzling ab Mitte Mai (nach den Eisheiligen)"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 8,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "August bis Oktober"
+      },
+      "spacingMinCm": 40,
+      "spacingMaxCm": 50,
+      "companions": {
+        "good": [
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "tomate",
+          "basilikum"
+        ],
+        "bad": [
+          {
+            "id": "kartoffel",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "aubergine",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "paprika",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "erbse",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "fenchel",
+            "reason": "Fenchel hemmt über Wurzelausscheidungen das Wachstum vieler Nachbarn."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "fruit"
+    },
+    {
+      "id": "aubergine",
+      "name": "Aubergine",
+      "family": "nachtschattengewaechse",
+      "familyLabel": "Nachtschattengewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          5
+        ],
+        "note": "Als Setzling ab Mitte Mai (nach den Eisheiligen)"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 7,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juli bis Oktober"
+      },
+      "spacingMinCm": 45,
+      "spacingMaxCm": 100,
+      "companions": {
+        "good": [
+          "buschbohne"
+        ],
+        "bad": [
+          {
+            "id": "paprika",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "tomate",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "chili",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "fruit"
+    },
+    {
+      "id": "radieschen",
+      "name": "Radieschen",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "transplant": [],
+        "note": "März bis Oktober, laufende Direktsaat"
+      },
+      "germination": {
+        "daysMin": 3,
+        "daysMax": 7,
+        "note": "Keimdauer ca. 3–7 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 28,
+        "daysToHarvestMax": 56,
+        "note": "4–8 Wochen nach Aussaat"
+      },
+      "spacingMinCm": 3,
+      "spacingMaxCm": 5,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "erbse",
+          "mangold",
+          "karotte",
+          "tomate",
+          "kopfsalat"
+        ],
+        "bad": [
+          {
+            "id": "gurke",
+            "reason": "Unterschiedlicher Wasserbedarf und Krankheitsanfälligkeit."
+          },
+          {
+            "id": "kohlrabi",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "radieschen",
+            "reason": "Selbstunverträglichkeit – auf derselben Fläche sofort wieder Radieschen begünstigt Krankheiten und Schädlinge."
+          }
+        ]
+      },
+      "rotationGapYears": 3,
+      "icon": "root"
+    },
+    {
+      "id": "rettich",
+      "name": "Rettich",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5,
+          8
+        ],
+        "transplant": [],
+        "note": "April/Mai (Sommerrettich) oder August (Winterrettich)"
+      },
+      "germination": {
+        "daysMin": 4,
+        "daysMax": 10,
+        "note": "Keimdauer ca. 4–10 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 56,
+        "daysToHarvestMax": 112,
+        "note": "Sommer schnell erntereif, Winterrettich lagerfähig (Schätzwert, 8–16 Wochen)"
+      },
+      "spacingMinCm": 20,
+      "spacingMaxCm": 30,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "erbse",
+          "mangold",
+          "karotte",
+          "tomate"
+        ],
+        "bad": [
+          {
+            "id": "gurke",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "kohlrabi",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "root"
+    },
+    {
+      "id": "karotte",
+      "name": "Karotte/Möhre",
+      "family": "doldenbluetler",
+      "familyLabel": "Doldenblütler",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "transplant": [],
+        "note": "März bis Juli, Direktsaat in Reihen (25–40 cm Reihenabstand)"
+      },
+      "germination": {
+        "daysMin": 14,
+        "daysMax": 21,
+        "note": "Keimdauer ca. 14–21 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis Oktober"
+      },
+      "spacingMinCm": 3,
+      "spacingMaxCm": 5,
+      "companions": {
+        "good": [
+          "zwiebel",
+          "knoblauch",
+          "lauch",
+          "kopfsalat",
+          "mangold",
+          "erbse",
+          "schnittlauch",
+          "erdbeere"
+        ],
+        "bad": [
+          {
+            "id": "sellerie",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          },
+          {
+            "id": "pastinake",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          },
+          {
+            "id": "petersilie",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          },
+          {
+            "id": "dill",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          },
+          {
+            "id": "fenchel",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          },
+          {
+            "id": "rote_bete",
+            "reason": "Konkurrenz um Nährstoffe im Wurzelraum."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "root"
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "family": "lauchgewaechse",
+      "familyLabel": "Lauchgewächse",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          2,
+          3,
+          4
+        ],
+        "transplant": [
+          3,
+          4
+        ],
+        "note": "Saatzwiebeln Februar–April, Steckzwiebeln März/April"
+      },
+      "germination": {
+        "daysMin": 10,
+        "daysMax": 18,
+        "note": "Keimdauer ca. 10–18 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 7,
+        "endMonth": 9,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juli bis September"
+      },
+      "spacingMinCm": 10,
+      "spacingMaxCm": 10,
+      "companions": {
+        "good": [
+          "karotte",
+          "dill",
+          "gurke",
+          "tomate",
+          "rote_bete",
+          "erdbeere"
+        ],
+        "bad": [
+          {
+            "id": "buschbohne",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "stangenbohne",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "erbse",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "kohlrabi",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Hemmen sich laut Erfahrungswerten gegenseitig im Wachstum."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "root"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "family": "lauchgewaechse",
+      "familyLabel": "Lauchgewächse",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          3,
+          4,
+          9,
+          10,
+          11
+        ],
+        "note": "Frühjahrssteckung März/April oder Herbststeckung September–November"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 8,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis August"
+      },
+      "spacingMinCm": 15,
+      "spacingMaxCm": 20,
+      "companions": {
+        "good": [
+          "erdbeere",
+          "gurke",
+          "karotte",
+          "rote_bete",
+          "tomate"
+        ],
+        "bad": [
+          {
+            "id": "erbse",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "buschbohne",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "stangenbohne",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "kohlrabi",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 3,
+      "icon": "root"
+    },
+    {
+      "id": "lauch",
+      "name": "Lauch/Porree",
+      "family": "lauchgewaechse",
+      "familyLabel": "Lauchgewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          3
+        ],
+        "transplant": [
+          4
+        ],
+        "note": "Aussaat März (Vorkultur), Pflanzung ab April"
+      },
+      "germination": {
+        "daysMin": 10,
+        "daysMax": 18,
+        "note": "Keimdauer ca. 10–18 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 4,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis April (winterhart, lange Standzeit)"
+      },
+      "spacingMinCm": 15,
+      "spacingMaxCm": 15,
+      "companions": {
+        "good": [
+          "erdbeere",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "karotte",
+          "kopfsalat",
+          "sellerie",
+          "tomate"
+        ],
+        "bad": [
+          {
+            "id": "buschbohne",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "stangenbohne",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "erbse",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "rote_bete",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "leaf"
+    },
+    {
+      "id": "baerlauch",
+      "name": "Bärlauch",
+      "family": "lauchgewaechse",
+      "familyLabel": "Lauchgewächse",
+      "zehrertyp": "schwach",
+      "standort": [
+        "halbschatten",
+        "schatten"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          3,
+          4,
+          9,
+          10
+        ],
+        "note": "Setzlinge im zeitigen Frühjahr oder Herbst pflanzen – verträgt keine pralle Sonne, klassischer Waldboden-/Schattenbewohner. Aussaat aus Samen ist möglich, aber sehr langsam (bis zu einem Jahr Keimzeit) und daher hier nicht als Methode geführt."
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 3,
+        "endMonth": 5,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "März bis Mai, vor der Blüte ernten – zieht danach ein (Sommerruhe) und treibt im nächsten Frühjahr wieder aus"
+      },
+      "spacingMinCm": 20,
+      "spacingMaxCm": 25,
+      "companions": {
+        "good": [],
+        "bad": []
+      },
+      "rotationGapYears": 1,
+      "icon": "herb"
+    },
+    {
+      "id": "kopfsalat",
+      "name": "Kopfsalat/Pflücksalat",
+      "family": "korbbluetler",
+      "familyLabel": "Korbblütler",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "transplant": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "note": "Direktsaat April bis Oktober, Setzlinge sukzessive von März bis August erhältlich"
+      },
+      "germination": {
+        "daysMin": 4,
+        "daysMax": 8,
+        "note": "Keimdauer ca. 4–8 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 56,
+        "daysToHarvestMax": 70,
+        "note": "8–10 Wochen nach Aussaat"
+      },
+      "spacingMinCm": 25,
+      "spacingMaxCm": 40,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "erbse",
+          "fenchel",
+          "gurke",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "karotte",
+          "zwiebel",
+          "radieschen",
+          "tomate",
+          "erdbeere"
+        ],
+        "bad": [
+          {
+            "id": "petersilie",
+            "reason": "Gilt als ungünstige Nachbarschaft."
+          },
+          {
+            "id": "sellerie",
+            "reason": "Gilt als ungünstige Nachbarschaft."
+          }
+        ]
+      },
+      "rotationGapYears": 3,
+      "icon": "leaf"
+    },
+    {
+      "id": "spinat",
+      "name": "Spinat",
+      "family": "gaensefussgewaechse",
+      "familyLabel": "Gänsefußgewächse",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          2,
+          3,
+          4,
+          8,
+          9,
+          10
+        ],
+        "transplant": [],
+        "note": "Februar–April oder August–Oktober, Direktsaat"
+      },
+      "germination": {
+        "daysMin": 8,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 8–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 42,
+        "daysToHarvestMax": 56,
+        "note": "6–8 Wochen nach Aussaat"
+      },
+      "spacingMinCm": 15,
+      "spacingMaxCm": 15,
+      "companions": {
+        "good": [
+          "erdbeere",
+          "kartoffel",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "buschbohne",
+          "tomate"
+        ],
+        "bad": [
+          {
+            "id": "rote_bete",
+            "reason": "Beide Gänsefußgewächse (verwandt) – ähnlicher Nährstoffbedarf, teils gegenseitige Wachstumshemmung."
+          },
+          {
+            "id": "mangold",
+            "reason": "Beide Gänsefußgewächse (verwandt) – ähnlicher Nährstoffbedarf, teils gegenseitige Wachstumshemmung."
+          }
+        ]
+      },
+      "rotationGapYears": 3,
+      "icon": "leaf"
+    },
+    {
+      "id": "mangold",
+      "name": "Mangold",
+      "family": "gaensefussgewaechse",
+      "familyLabel": "Gänsefußgewächse",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5,
+          6
+        ],
+        "transplant": [
+          4
+        ],
+        "note": "April bis Juni, Direktsaat oder Setzling ab April"
+      },
+      "germination": {
+        "daysMin": 8,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 8–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis Oktober"
+      },
+      "spacingMinCm": 25,
+      "spacingMaxCm": 30,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "radieschen",
+          "kopfsalat",
+          "karotte",
+          "zucchini"
+        ],
+        "bad": [
+          {
+            "id": "rote_bete",
+            "reason": "Beide Gänsefußgewächse (verwandt) – ähnlicher Nährstoffbedarf, teils gegenseitige Wachstumshemmung."
+          },
+          {
+            "id": "spinat",
+            "reason": "Beide Gänsefußgewächse (verwandt) – ähnlicher Nährstoffbedarf, teils gegenseitige Wachstumshemmung."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "leaf"
+    },
+    {
+      "id": "feldsalat",
+      "name": "Feldsalat",
+      "family": null,
+      "familyLabel": null,
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "transplant": [],
+        "note": "Juli bis Oktober, Direktsaat – klassischer Winter-/Herbstsalat, frosthart"
+      },
+      "germination": {
+        "daysMin": 10,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 10–14 Tage (Erfahrungswert), keimt bei Wärme über 20°C schlecht."
+      },
+      "harvest": {
+        "startMonth": 10,
+        "endMonth": 4,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Oktober bis April – wächst frostfest auch im Winter langsam weiter, laufende Ernte"
+      },
+      "spacingMinCm": 10,
+      "spacingMaxCm": 15,
+      "companions": {
+        "good": [
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "lauch",
+          "radieschen",
+          "karotte",
+          "erdbeere"
+        ],
+        "bad": []
+      },
+      "rotationGapYears": 2,
+      "icon": "leaf"
+    },
+    {
+      "id": "kohlrabi",
+      "name": "Kohlrabi",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          4
+        ],
+        "transplant": [
+          4
+        ],
+        "note": "April, Direktsaat oder Setzling"
+      },
+      "germination": {
+        "daysMin": 6,
+        "daysMax": 10,
+        "note": "Keimdauer ca. 6–10 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": 56,
+        "note": "Ab 8 Wochen nach Aussaat, Sommer/Herbst"
+      },
+      "spacingMinCm": 25,
+      "spacingMaxCm": 30,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "dill",
+          "erbse",
+          "gurke",
+          "kartoffel",
+          "lauch",
+          "radieschen",
+          "sellerie"
+        ],
+        "bad": [
+          {
+            "id": "kohlrabi",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "leaf"
+    },
+    {
+      "id": "brokkoli",
+      "name": "Brokkoli",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          4
+        ],
+        "transplant": [
+          5
+        ],
+        "note": "Aussaat April (Vorkultur), Pflanzung Mai"
+      },
+      "germination": {
+        "daysMin": 6,
+        "daysMax": 10,
+        "note": "Keimdauer ca. 6–10 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 7,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juli bis Oktober"
+      },
+      "spacingMinCm": 30,
+      "spacingMaxCm": 60,
+      "companions": {
+        "good": [
+          "sellerie",
+          "buschbohne",
+          "kopfsalat"
+        ],
+        "bad": [
+          {
+            "id": "kohlrabi",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 5,
+      "icon": "leaf"
+    },
+    {
+      "id": "blumenkohl",
+      "name": "Blumenkohl",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "note": "Als Setzling Februar oder April–Juni"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis Oktober"
+      },
+      "spacingMinCm": 50,
+      "spacingMaxCm": 50,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "sellerie",
+          "erbse"
+        ],
+        "bad": [
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "kohlrabi",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "leaf"
+    },
+    {
+      "id": "weisskohl",
+      "name": "Weißkohl",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          3,
+          4,
+          5
+        ],
+        "note": "Als Setzling März bis Mai"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 7,
+        "endMonth": 12,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juli bis Dezember"
+      },
+      "spacingMinCm": 50,
+      "spacingMaxCm": 70,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "dill",
+          "kopfsalat",
+          "erbse",
+          "gurke",
+          "rote_bete",
+          "sellerie",
+          "tomate"
+        ],
+        "bad": [
+          {
+            "id": "kohlrabi",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "leaf"
+    },
+    {
+      "id": "rotkohl",
+      "name": "Rotkohl",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          3,
+          4,
+          5
+        ],
+        "note": "Als Setzling März bis Mai (wie Weißkohl)"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 7,
+        "endMonth": 12,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juli bis Dezember"
+      },
+      "spacingMinCm": 50,
+      "spacingMaxCm": 50,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "dill",
+          "kopfsalat",
+          "erbse",
+          "gurke",
+          "rote_bete",
+          "sellerie",
+          "tomate"
+        ],
+        "bad": [
+          {
+            "id": "kohlrabi",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "leaf"
+    },
+    {
+      "id": "gruenkohl",
+      "name": "Grünkohl",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          5,
+          6
+        ],
+        "note": "Als Setzling Mai/Juni"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 9,
+        "endMonth": 3,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "September bis März (nach erstem Frost am besten)"
+      },
+      "spacingMinCm": 50,
+      "spacingMaxCm": 50,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "kopfsalat",
+          "sellerie"
+        ],
+        "bad": [
+          {
+            "id": "kohlrabi",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "leaf"
+    },
+    {
+      "id": "rosenkohl",
+      "name": "Rosenkohl",
+      "family": "kreuzbluetler",
+      "familyLabel": "Kreuzblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          4,
+          5
+        ],
+        "note": "Als Setzling April/Mai"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 8,
+        "endMonth": 12,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "August bis Dezember, frostverträglich"
+      },
+      "spacingMinCm": 50,
+      "spacingMaxCm": 70,
+      "companions": {
+        "good": [
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl"
+        ],
+        "bad": [
+          {
+            "id": "kohlrabi",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Beide Kreuzblütler – begünstigen sich gegenseitig bei Kohlhernie und Erdflöhen."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 3,
+      "icon": "leaf"
+    },
+    {
+      "id": "buschbohne",
+      "name": "Buschbohne",
+      "family": "huelsenfruechtler",
+      "familyLabel": "Hülsenfrüchtler",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          5
+        ],
+        "transplant": [],
+        "note": "Ab Mitte Mai (frostempfindlich), Direktsaat"
+      },
+      "germination": {
+        "daysMin": 7,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 7–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 55,
+        "daysToHarvestMax": 70,
+        "note": "Juli bis September (55–70 Tage)"
+      },
+      "spacingMinCm": 6,
+      "spacingMaxCm": 8,
+      "companions": {
+        "good": [
+          "dill",
+          "erdbeere",
+          "gurke",
+          "kartoffel",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "rote_bete",
+          "radieschen",
+          "kopfsalat",
+          "sellerie",
+          "spinat"
+        ],
+        "bad": [
+          {
+            "id": "erbse",
+            "reason": "Beide Hülsenfrüchtler – konkurrieren um dieselben Bodenbakterien/Nährstoffe und teilen Schädlinge."
+          },
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "fenchel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "paprika",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "lauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "schnittlauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "stangenbohne",
+            "reason": "Beide Hülsenfrüchtler – konkurrieren um dieselben Bodenbakterien/Nährstoffe und teilen Schädlinge."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "legume"
+    },
+    {
+      "id": "stangenbohne",
+      "name": "Stangenbohne",
+      "family": "huelsenfruechtler",
+      "familyLabel": "Hülsenfrüchtler",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          5
+        ],
+        "transplant": [],
+        "note": "Ab Mitte Mai (frostempfindlich), Direktsaat"
+      },
+      "germination": {
+        "daysMin": 7,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 7–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 70,
+        "daysToHarvestMax": 84,
+        "note": "Juli bis November (10–12 Wochen)"
+      },
+      "spacingMinCm": 50,
+      "spacingMaxCm": 50,
+      "companions": {
+        "good": [
+          "gurke",
+          "kartoffel",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "radieschen",
+          "rote_bete",
+          "spinat"
+        ],
+        "bad": [
+          {
+            "id": "buschbohne",
+            "reason": "Beide Hülsenfrüchtler – konkurrieren um dieselben Bodenbakterien/Nährstoffe und teilen Schädlinge."
+          },
+          {
+            "id": "erbse",
+            "reason": "Beide Hülsenfrüchtler – konkurrieren um dieselben Bodenbakterien/Nährstoffe und teilen Schädlinge."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "lauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "schnittlauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "paprika",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "legume"
+    },
+    {
+      "id": "erbse",
+      "name": "Erbse",
+      "family": "huelsenfruechtler",
+      "familyLabel": "Hülsenfrüchtler",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "transplant": [],
+        "note": "März bis Juni, Direktsaat"
+      },
+      "germination": {
+        "daysMin": 7,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 7–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 5,
+        "endMonth": 8,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Mai bis August"
+      },
+      "spacingMinCm": 10,
+      "spacingMaxCm": 10,
+      "companions": {
+        "good": [
+          "dill",
+          "fenchel",
+          "gurke",
+          "karotte",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "kopfsalat",
+          "radieschen",
+          "zucchini"
+        ],
+        "bad": [
+          {
+            "id": "buschbohne",
+            "reason": "Beide Hülsenfrüchtler – konkurrieren um dieselben Bodenbakterien/Nährstoffe und teilen Schädlinge."
+          },
+          {
+            "id": "stangenbohne",
+            "reason": "Beide Hülsenfrüchtler – konkurrieren um dieselben Bodenbakterien/Nährstoffe und teilen Schädlinge."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt als ungünstige Nachbarschaft."
+          },
+          {
+            "id": "tomate",
+            "reason": "Gilt als ungünstige Nachbarschaft."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "schnittlauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 6,
+      "icon": "legume"
+    },
+    {
+      "id": "kartoffel",
+      "name": "Kartoffel",
+      "family": "nachtschattengewaechse",
+      "familyLabel": "Nachtschattengewächse",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          4,
+          5
+        ],
+        "note": "Pflanzung April/Mai"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis Oktober"
+      },
+      "spacingMinCm": 30,
+      "spacingMaxCm": 35,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "kohlrabi",
+          "spinat"
+        ],
+        "bad": [
+          {
+            "id": "tomate",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "paprika",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "aubergine",
+            "reason": "Beide Nachtschattengewächse – teilen sich typische Krankheiten (z.B. Braunfäule) und haben ähnlich hohen Nährstoffbedarf."
+          },
+          {
+            "id": "erbse",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gurke",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "kuerbis",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "tuber"
+    },
+    {
+      "id": "sellerie",
+      "name": "Sellerie",
+      "family": "doldenbluetler",
+      "familyLabel": "Doldenblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          5
+        ],
+        "note": "Als Setzling ab Mai"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 8,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "August bis Oktober"
+      },
+      "spacingMinCm": 40,
+      "spacingMaxCm": 40,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "gurke",
+          "kopfsalat",
+          "lauch",
+          "tomate",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl"
+        ],
+        "bad": [
+          {
+            "id": "erbse",
+            "reason": "Hülsenfrüchtler und Sellerie hemmen sich gegenseitig im Wachstum."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "stalk"
+    },
+    {
+      "id": "rote_bete",
+      "name": "Rote Bete",
+      "family": "gaensefussgewaechse",
+      "familyLabel": "Gänsefußgewächse",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5
+        ],
+        "transplant": [],
+        "note": "April/Mai, Direktsaat"
+      },
+      "germination": {
+        "daysMin": 10,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 10–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 11,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis November"
+      },
+      "spacingMinCm": 10,
+      "spacingMaxCm": 10,
+      "companions": {
+        "good": [
+          "buschbohne",
+          "dill",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "gurke",
+          "kopfsalat",
+          "zwiebel",
+          "zucchini",
+          "knoblauch",
+          "lauch"
+        ],
+        "bad": [
+          {
+            "id": "kartoffel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "spinat",
+            "reason": "Beide Gänsefußgewächse (verwandt) – ähnlicher Nährstoffbedarf, teils gegenseitige Wachstumshemmung."
+          },
+          {
+            "id": "mangold",
+            "reason": "Beide Gänsefußgewächse (verwandt) – ähnlicher Nährstoffbedarf, teils gegenseitige Wachstumshemmung."
+          }
+        ]
+      },
+      "rotationGapYears": 3,
+      "icon": "root"
+    },
+    {
+      "id": "pastinake",
+      "name": "Pastinake",
+      "family": "doldenbluetler",
+      "familyLabel": "Doldenblütler",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "transplant": [],
+        "note": "Februar bis Juni, Direktsaat"
+      },
+      "germination": {
+        "daysMin": 14,
+        "daysMax": 28,
+        "note": "Keimdauer ca. 14–28 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 160,
+        "daysToHarvestMax": 200,
+        "note": "Ab September (160–200 Tage, sehr lange Kultur)"
+      },
+      "spacingMinCm": 10,
+      "spacingMaxCm": 15,
+      "companions": {
+        "good": [
+          "kartoffel",
+          "kopfsalat",
+          "radieschen",
+          "rote_bete",
+          "sellerie",
+          "dill",
+          "kohlrabi"
+        ],
+        "bad": [
+          {
+            "id": "karotte",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          },
+          {
+            "id": "petersilie",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          },
+          {
+            "id": "fenchel",
+            "reason": "Beide Doldenblütler – ziehen dieselben Schädlinge an (z.B. Möhrenfliege) und stehen in Konkurrenz um dieselben Nährstoffe."
+          }
+        ]
+      },
+      "rotationGapYears": 5,
+      "icon": "root"
+    },
+    {
+      "id": "fenchel",
+      "name": "Fenchel",
+      "family": "doldenbluetler",
+      "familyLabel": "Doldenblütler",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "transplant": [],
+        "note": "April bis August, Direktsaat"
+      },
+      "germination": {
+        "daysMin": 8,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 8–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 70,
+        "daysToHarvestMax": 84,
+        "note": "Juni bis Oktober (10–12 Wochen)"
+      },
+      "spacingMinCm": 30,
+      "spacingMaxCm": 40,
+      "companions": {
+        "good": [
+          "erbse",
+          "gurke",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "spinat",
+          "basilikum"
+        ],
+        "bad": [
+          {
+            "id": "buschbohne",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "stangenbohne",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "tomate",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "herb"
+    },
+    {
+      "id": "erdbeere",
+      "name": "Erdbeere",
+      "family": "rosengewaechse",
+      "familyLabel": "Rosengewächse",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          7,
+          8
+        ],
+        "note": "Pflanzung Juli/August"
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 4,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "April bis Oktober"
+      },
+      "spacingMinCm": 25,
+      "spacingMaxCm": 30,
+      "companions": {
+        "good": [
+          "knoblauch",
+          "kopfsalat",
+          "radieschen",
+          "spinat",
+          "schnittlauch",
+          "zwiebel",
+          "buschbohne"
+        ],
+        "bad": [
+          {
+            "id": "kohlrabi",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "brokkoli",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "weisskohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rotkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "gruenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "rosenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "berry"
+    },
+    {
+      "id": "rhabarber",
+      "name": "Rhabarber",
+      "family": null,
+      "familyLabel": null,
+      "zehrertyp": "stark",
+      "standort": [
+        "sonne",
+        "halbschatten",
+        "schatten"
+      ],
+      "methods": [
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [],
+        "transplant": [
+          3,
+          4,
+          9,
+          10
+        ],
+        "note": "Pflanzung als Wurzelstock im Frühjahr oder Herbst – mehrjährig, erst ab dem 2. Standjahr richtig erntereif. Einer der wenigen echten Gemüse, die auch im Schatten zuverlässig wachsen (im Vollschatten etwas geringerer Ertrag)."
+      },
+      "germination": {
+        "daysMin": null,
+        "daysMax": null,
+        "note": null
+      },
+      "harvest": {
+        "startMonth": 4,
+        "endMonth": 6,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "April bis Juni – traditionell nur bis Johannitag (24. Juni) ernten, danach steigt der Oxalsäuregehalt der Stiele"
+      },
+      "spacingMinCm": 80,
+      "spacingMaxCm": 100,
+      "companions": {
+        "good": [
+          "erdbeere"
+        ],
+        "bad": []
+      },
+      "rotationGapYears": 5,
+      "icon": "stalk"
+    },
+    {
+      "id": "basilikum",
+      "name": "Basilikum",
+      "family": "lippenbluetler",
+      "familyLabel": "Lippenblütler",
+      "zehrertyp": "stark",
+      "standort": [
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          3
+        ],
+        "transplant": [
+          5
+        ],
+        "note": "Vorkultur März, Auspflanzen ab Mai (frostempfindlich)"
+      },
+      "germination": {
+        "daysMin": 5,
+        "daysMax": 10,
+        "note": "Keimdauer ca. 5–10 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": 6,
+        "endMonth": 10,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Juni bis Oktober"
+      },
+      "spacingMinCm": 10,
+      "spacingMaxCm": 25,
+      "companions": {
+        "good": [
+          "tomate",
+          "gurke",
+          "zucchini"
+        ],
+        "bad": []
+      },
+      "rotationGapYears": 3,
+      "icon": "herb"
+    },
+    {
+      "id": "minze",
+      "name": "Minze",
+      "family": "lippenbluetler",
+      "familyLabel": "Lippenblütler",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne",
+        "halbschatten",
+        "schatten"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5,
+          6
+        ],
+        "transplant": [
+          4,
+          5,
+          6
+        ],
+        "note": "April bis Juni, Direktsaat oder Setzling – wächst auch im Vollschatten gut, braucht dafür gleichmäßige Feuchtigkeit. Mehrjährig, winterhart, breitet sich über Ausläufer stark aus (ggf. mit Wurzelsperre oder im Topf kultivieren)."
+      },
+      "germination": {
+        "daysMin": 10,
+        "daysMax": 20,
+        "note": "Keimdauer ca. 10–20 Tage (Erfahrungswert), keimt unregelmäßig."
+      },
+      "harvest": {
+        "startMonth": 5,
+        "endMonth": 9,
+        "daysToHarvestMin": null,
+        "daysToHarvestMax": null,
+        "note": "Mai bis September, laufende Ernte – treibt jedes Jahr neu aus"
+      },
+      "spacingMinCm": 30,
+      "spacingMaxCm": 40,
+      "companions": {
+        "good": [
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "karotte",
+          "tomate"
+        ],
+        "bad": []
+      },
+      "rotationGapYears": 3,
+      "icon": "herb"
+    },
+    {
+      "id": "petersilie",
+      "name": "Petersilie",
+      "family": "doldenbluetler",
+      "familyLabel": "Doldenblütler",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne",
+        "halbschatten"
+      ],
+      "methods": [
+        "saatgut",
+        "setzling"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "transplant": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "note": "April bis August, Direktsaat oder Setzling"
+      },
+      "germination": {
+        "daysMin": 14,
+        "daysMax": 28,
+        "note": "Keimdauer ca. 14–28 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 70,
+        "daysToHarvestMax": 240,
+        "note": "Ganzjährig nutzbar (zweijährige Pflanze; Schätzwert, ca. 10 Wochen bis lange in die Saison)"
+      },
+      "spacingMinCm": 10,
+      "spacingMaxCm": 20,
+      "companions": {
+        "good": [
+          "tomate",
+          "gurke",
+          "zwiebel",
+          "schnittlauch",
+          "radieschen",
+          "erdbeere"
+        ],
+        "bad": [
+          {
+            "id": "kopfsalat",
+            "reason": "Gilt als ungünstige Nachbarschaft."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "herb"
+    },
+    {
+      "id": "dill",
+      "name": "Dill",
+      "family": "doldenbluetler",
+      "familyLabel": "Doldenblütler",
+      "zehrertyp": "schwach",
+      "standort": [
+        "sonne"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "transplant": [],
+        "note": "April bis August, laufende Direktsaat"
+      },
+      "germination": {
+        "daysMin": 10,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 10–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 56,
+        "daysToHarvestMax": 84,
+        "note": "Laufend während der Kultur, ca. 8–12 Wochen nach Aussaat (Schätzwert)"
+      },
+      "spacingMinCm": 20,
+      "spacingMaxCm": 30,
+      "companions": {
+        "good": [
+          "erbse",
+          "karotte",
+          "kohlrabi",
+          "brokkoli",
+          "blumenkohl",
+          "weisskohl",
+          "rotkohl",
+          "gruenkohl",
+          "rosenkohl",
+          "kopfsalat",
+          "radieschen",
+          "sellerie",
+          "zucchini",
+          "gurke"
+        ],
+        "bad": [
+          {
+            "id": "buschbohne",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "kartoffel",
+            "reason": "Beeinträchtigt laut Erfahrungswerten das Kartoffelwachstum."
+          },
+          {
+            "id": "lauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "knoblauch",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "zwiebel",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "tomate",
+            "reason": "Gilt als ungünstige Nachbarschaft."
+          }
+        ]
+      },
+      "rotationGapYears": 4,
+      "icon": "herb"
+    },
+    {
+      "id": "schnittlauch",
+      "name": "Schnittlauch",
+      "family": "lauchgewaechse",
+      "familyLabel": "Lauchgewächse",
+      "zehrertyp": "mittel",
+      "standort": [
+        "sonne",
+        "halbschatten",
+        "schatten"
+      ],
+      "methods": [
+        "saatgut"
+      ],
+      "sowing": {
+        "direct": [
+          3,
+          4
+        ],
+        "transplant": [],
+        "note": "März/April, Direktsaat (mehrjährig, winterhart)"
+      },
+      "germination": {
+        "daysMin": 10,
+        "daysMax": 14,
+        "note": "Keimdauer ca. 10–14 Tage (Erfahrungswert)."
+      },
+      "harvest": {
+        "startMonth": null,
+        "endMonth": null,
+        "daysToHarvestMin": 56,
+        "daysToHarvestMax": 120,
+        "note": "Laufend ab ca. 8 Wochen nach Aussaat (Schätzwert)"
+      },
+      "spacingMinCm": 30,
+      "spacingMaxCm": 30,
+      "companions": {
+        "good": [
+          "karotte",
+          "erdbeere",
+          "petersilie",
+          "basilikum",
+          "tomate"
+        ],
+        "bad": [
+          {
+            "id": "erbse",
+            "reason": "Zwiebelgewächse und Hülsenfrüchtler hemmen sich gegenseitig (Wurzelausscheidungen)."
+          },
+          {
+            "id": "blumenkohl",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "buschbohne",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          },
+          {
+            "id": "stangenbohne",
+            "reason": "Gilt laut Erfahrungswerten als ungünstige Nachbarschaft (Konkurrenz um Nährstoffe/Wasser oder erhöhter Krankheits-/Schädlingsdruck)."
+          }
+        ]
+      },
+      "rotationGapYears": 3,
+      "icon": "herb"
+    }
+  ]
+}
