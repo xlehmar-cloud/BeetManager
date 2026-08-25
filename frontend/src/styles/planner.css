@@ -77,6 +77,11 @@
   color: var(--color-error);
 }
 
+.success {
+  color: var(--color-radius-ring);
+  font-weight: 600;
+}
+
 .hint {
   font-size: 0.85rem;
   color: #6b7566;

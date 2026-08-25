@@ -187,6 +187,13 @@ export default function BedPlanner() {
     [plantings, plantsById, planYear],
   );
 
+  // Alle method='historisch'-Einträge, jahrgangsunabhängig — für die "Bisher
+  // nachgetragen"-Liste im Historie-Tab, s. dortiger Kommentar.
+  const historicalPlantings = useMemo(
+    () => plantings.filter((p) => p.method === 'historisch'),
+    [plantings],
+  );
+
   if (loading || catalogLoading) return <p className="loading">Lade Beet…</p>;
   if (error) return <p className="error">{error}</p>;
   if (!bed) return <p className="error">Beet nicht gefunden.</p>;
@@ -294,6 +301,18 @@ export default function BedPlanner() {
       {tab === TABS.HISTORY && (
         <div className="panel">
           <HistoryForm plants={plants} onSubmit={handleHistorySubmit} onCancel={() => setTab(TABS.PLANNER)} />
+          <h3>Bisher nachgetragen</h3>
+          {/* Bewusst NICHT über bedHistoryForInfo (das ist auf das im Planer
+              gewählte Jahr gefiltert) — ein frisch nachgetragener Eintrag für ein
+              anderes Jahr als planYear würde sonst hier ebenso "spurlos"
+              verschwinden wie in der Pflanzungen-Liste des Planer-Tabs, was genau
+              der gemeldete Bug war ("lässt sich nicht speichern bzw. hat keine
+              Auswirkung" — tatsächlich gespeichert, nur nirgends sichtbar). */}
+          <BedInfoPanel
+            plantings={historicalPlantings}
+            plantsById={plantsById}
+            onRemove={handleRemove}
+          />
         </div>
       )}
 
