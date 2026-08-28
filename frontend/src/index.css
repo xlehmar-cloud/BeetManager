@@ -16,7 +16,19 @@
 
 body {
   margin: 0;
-  background: var(--color-bg);
+  min-height: 100vh;
+  /* Garten-Foto (frontend/src/assets/garden-bg.jpg, CC0 — Wikimedia Commons,
+     "Leafy Greens in Raised Garden Beds", Alabama Extension) als Hintergrund,
+     per dunklem Overlay abgedunkelt, damit es den Vordergrund (weiße
+     Karten/Panels) nicht stört. Deckt den ganzen Viewport ab (cover), bleibt
+     beim Scrollen fix stehen. */
+  background-color: var(--color-bg);
+  background-image: linear-gradient(rgba(10, 20, 8, 0.55), rgba(10, 20, 8, 0.55)),
+    url('./assets/garden-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--color-text);
 }
 
@@ -102,7 +114,16 @@ button:disabled {
   font-size: 0.9rem;
 }
 
+/* Sitzt direkt auf dem Foto-Hintergrund von body (im Header von Beete.jsx),
+   nicht auf einer weißen Karte — deshalb hell statt --color-text. */
+.user-bar span {
+  color: #eaf5e6;
+}
+
 .loading {
   text-align: center;
   margin-top: 3rem;
+  /* Rendert immer direkt auf dem Foto-Hintergrund von body, nie auf einer
+     weißen Karte — deshalb hell statt --color-text. */
+  color: #eaf5e6;
 }

@@ -36,21 +36,26 @@
 }
 
 .top-nav a {
-  color: var(--color-primary-dark);
+  color: #eaf5e6;
   text-decoration: none;
   font-weight: 600;
 }
 
 .top-nav a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
 .back-link {
   display: inline-block;
-  color: var(--color-primary-dark);
+  color: #eaf5e6;
   text-decoration: none;
   font-size: 0.9rem;
   margin-bottom: 0.25rem;
+}
+
+.back-link:hover {
+  color: #ffffff;
 }
 
 .beete-toolbar {
@@ -58,6 +63,21 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
+}
+
+/* Diese Titel/Meta-Texte sitzen direkt auf dem Foto-Hintergrund von body
+   (index.css), nicht auf einer weißen Karte — deshalb hell statt
+   --color-text, sonst kaum lesbar. */
+.beete-page > header h1,
+.beete-page .beete-toolbar h2,
+.bed-planner-page > .no-print > header h1,
+.overview-page > header h1,
+.plant-manager-page > header h1 {
+  color: #ffffff;
+}
+
+.plant-manager-page > .hint {
+  color: #d9e6d3;
 }
 
 .panel {
@@ -227,12 +247,12 @@ button.link-button {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1.25rem;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .tab-bar button {
   background: none;
-  color: var(--color-text);
+  color: #d9e6d3;
   border: none;
   border-bottom: 3px solid transparent;
   border-radius: 0;
@@ -240,13 +260,13 @@ button.link-button {
 }
 
 .tab-bar button.active {
-  border-bottom-color: var(--color-primary);
+  border-bottom-color: #8fd67f;
   font-weight: 600;
-  color: var(--color-primary-dark);
+  color: #ffffff;
 }
 
 .bed-meta {
-  color: #6b7566;
+  color: #d9e6d3;
   margin: 0;
 }
 
@@ -297,12 +317,22 @@ button.link-button {
   border-radius: 8px;
 }
 
+/* .planner-sidebar sitzt (anders als der Kalender-Tab, wo MonthSelector im
+   weißen .panel steckt) direkt auf dem Foto-Hintergrund — dort hell statt
+   --color-text. */
+.planner-sidebar .month-selector label {
+  color: #d9e6d3;
+}
+
 .year-select {
   display: inline-flex;
   flex-direction: column;
   gap: 0.25rem;
   font-size: 0.85rem;
   margin-bottom: 1rem;
+  /* Nur auf der Kalenderübersicht (Overview.jsx) verwendet, direkt auf dem
+     Foto-Hintergrund — deshalb hell statt --color-text. */
+  color: #d9e6d3;
 }
 
 /* ---------- PlantPicker ---------- */
@@ -572,6 +602,9 @@ button.link-button {
 .bed-info-header h3 {
   margin: 0;
   font-size: 1rem;
+  /* Sitzt im Planer-Tab direkt im .planner-sidebar auf dem Foto-Hintergrund,
+     nicht auf einer weißen Karte — deshalb hell statt --color-text. */
+  color: #ffffff;
 }
 
 .bed-info-panel {
